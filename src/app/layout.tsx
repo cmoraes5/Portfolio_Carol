@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Madimi_One } from "next/font/google";
 import "./globals.css";
+import { Carrossel } from "@/components/sections/Carrossel";
+import { Footer } from "@/components/ui/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const madimiOne = Madimi_One({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-madimi-one",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${madimiOne.variable} bg-[#F7F7F7] antialiased flex flex-col min-h-screen`}
       >
         {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
