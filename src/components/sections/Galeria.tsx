@@ -5,67 +5,81 @@
 //   type: 'large' | 'small';
 // };
 
+import { Card } from "../ui/Card";
+
 export function Galeria() {
-  // const res = await fetch('https://api.exemplo.com/projects');
-  // const data: Project[] = await res.json();
+  // const [projects, setProjects] = useState([]);
 
-  // const largeProjects = data.filter((p) => p.type === 'large');
-  // const smallProjects = data.filter((p) => p.type === 'small');
+  //   useEffect(() => {
+  //     const fetchProjects = async () => {
+  //       try {
+  //         const res = await fetch(
+  //           `https://api.behance.net/v2/users/SEU_USERNAME/projects?client_id=SUA_API_KEY`
+  //         );
+  //         const data = await res.json();
+  //         setProjects(data.projects || []);
+  //       } catch (err) {
+  //         console.error("Erro ao buscar projetos do Behance:", err);
+  //       }
+  //     };
 
-  // return (
-  //   <section className="bg-gray-100 py-16 px-4">
-  //     {/* Grid superior */}
-  //     <div className="max-w-7xl mx-auto grid gap-8 grid-cols-1 lg:grid-cols-2">
-  //       {largeProjects.map((project) => (
-  //         <div key={project.id} className="rounded-xl overflow-hidden shadow-lg">
-  //           <img src={project.image} alt={project.title} className="w-full h-auto object-cover" />
-  //         </div>
-  //       ))}
+  //     fetchProjects();
+  //   }, []);
+
+  //   return (
+  //     <div className="group px-17 pb-[120px] pt-20 rounded-3xl bg-[#F6F1EB]
+  //       text-[#7F5528] shadow-md flex flex-row items-center justify-between"
+  //     >
+  //       {/* Texto */}
+  //       <div className="flex flex-col gap-3">
+  //         <h1 className="text-[130px] font-bold">UX</h1>
+  //         <span className="text-[80px] font-medium">Case Study</span>
+  //       </div>
+
+  //       {/* Banners vindos do Behance */}
+  //       <div className="flex flex-row relative items-center">
+  //         {projects.slice(0, 3).map((proj, i) => (
+  //           <img
+  //             key={proj.id}
+  //             src={proj.covers["808"]} // pega o banner (tem 115, 202, 404, 808, original)
+  //             alt={proj.name}
+  //             className={`absolute shadow-lg ${
+  //               i === 0
+  //                 ? "-left-28 top-12 w-[300px] rotate-[-8deg]"
+  //                 : i === 1
+  //                 ? "relative z-10 w-[600px]"
+  //                 : "-right-20 top-8 w-[220px] rotate-[6deg]"
+  //             }`}
+  //           />
+  //         ))}
+  //       </div>
   //     </div>
-
-  //     {/* Grid inferior */}
-  //     <div className="mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-  //       {smallProjects.map((project) => (
-  //         <div key={project.id} className="rounded-xl overflow-hidden shadow-lg">
-  //           <img src={project.image} alt={project.title} className="w-full h-auto object-contain" />
-  //         </div>
-  //       ))}
-  //     </div>
-  //   </section>
+  //   );
+  // }
 
   return (
-    <section className="py-16 px-4">
-      <div className="rounded-xl overflow-hidden shadow-xl">
-        <img
-          src="/UX-Case-Study.png"
-          alt="Lets"
-          className="w-full h-auto object-cover"
-        />
-      </div>
+    <section className="py-[120px] px-[100px] flex flex-col gap-18 items-center">
+      <Card />
 
       {/* Linha inferior com 3 blocos */}
       <div className="mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="rounded-xl overflow-hidden shadow-lg">
-          <img
-            src="/teamspeak.png"
-            alt="TeamSpeak"
-            className="w-full h-auto object-contain"
-          />
-        </div>
-        <div className="rounded-xl overflow-hidden shadow-lg">
-          <img
-            src="/adopt.png"
-            alt="Adopt"
-            className="w-full h-auto object-contain"
-          />
-        </div>
-        <div className="rounded-xl overflow-hidden shadow-lg">
-          <img
-            src="/bikcraft.png"
-            alt="Bikcraft"
-            className="w-full h-auto object-contain"
-          />
-        </div>
+        <img
+          src="/teamspeak.png"
+          alt="TeamSpeak"
+          className="w-full h-auto object-contain"
+        />
+
+        <img
+          src="/adopt.png"
+          alt="Adopt"
+          className="w-full h-auto object-contain"
+        />
+
+        <img
+          src="/bikcraft.png"
+          alt="Bikcraft"
+          className="w-full h-auto object-contain"
+        />
       </div>
     </section>
   );
