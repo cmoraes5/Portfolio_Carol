@@ -19,7 +19,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="flex flex-col items-center text-black border-t-[1px]">
+    <footer className="flex flex-col items-center text-black border-t-[1px] bg-[#F3F3F3]">
       <div className="w-full py-32 flex flex-row justify-center gap-[120px] px-[100px] ">
         <div className="flex flex-col space-y-4">
           <h1 className="text-[64px] font-semibold leading-snug">
@@ -28,17 +28,17 @@ export function Footer() {
 
           <ul className="flex flex-row space-x-4">
             <li>
-              <Button className="border border-secondary p-1" onClick={() => window.open('https://www.linkedin.com/in/seu-perfil/', '_blank')}>
+              <Button className="border border-secondary p-1" href="https://www.linkedin.com/in/carol-magdalena-176299274/">
                 <LinkedinLogo size={44} />
               </Button>
             </li>
             <li>
-              <Button className="border border-secondary p-1" onClick={() => window.open('mailto:carol.ux.ui@gmail.com')}>
+              <Button className="border border-secondary p-1" href="mailto:carol.ux.ui@gmail.com">
                 <EnvelopeSimple size={44} />
               </Button>
             </li>
             <li>
-              <Button className="border border-secondary p-1" onClick={() => window.open('https://wa.me/5521966067793', '_blank')}>
+              <Button className="border border-secondary p-1" href="https://wa.me/5521966067793">
                 <WhatsappLogo size={44} />
               </Button>
             </li>

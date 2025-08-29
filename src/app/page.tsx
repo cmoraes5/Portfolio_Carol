@@ -1,7 +1,6 @@
 import { ArrowUpRight } from "@/components/Icons";
 import { Galeria } from "@/components/sections/Galeria";
 import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
 
 export default function Home() {
   return (
@@ -28,7 +27,10 @@ export default function Home() {
             soluções reais.
           </p>
 
-          <Button className="text-3xl font-bold mt-5 text-[#FB527A] w-fit underline">
+          <Button
+            href="/portfolio"
+            className="text-3xl font-bold mt-5 text-[#FB527A] w-fit underline"
+          >
             Ver Projetos
           </Button>
         </div>
@@ -65,7 +67,10 @@ export default function Home() {
             entre pessoas diversas.
           </p>
 
-          <Button className="flex flex-row mt-6 items-center space-x-1 px-3 py-2 bg-[#EC2B58] font-semibold text-2xl text-white rounded-lg w-fit">
+          <Button
+            href="/sobre"
+            className="flex flex-row mt-6 items-center space-x-1 px-3 py-2 bg-[#EC2B58] font-semibold text-2xl text-white rounded-lg w-fit"
+          >
             <span>Conheça minha história</span>
             <ArrowUpRight size={28} weight="bold" />
           </Button>

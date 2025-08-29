@@ -2,8 +2,8 @@ export function Card() {
   return (
     <div
       className="group pl-17 pr-[180px] pt-20 max-w-[1240px] rounded-3xl bg-linear-to-r
-     from-[#DED1C1] via-[#E6DED5] to-blue-[#F6F1EB] text-[#7F5528]
-      shadow-md flex flex-row flex-wrap justify-center gap-40"
+     from-[#DED1C1] via-[#E6DED5] to-[#f4efe9] text-[#7F5528]
+      shadow-xs flex flex-row flex-wrap justify-center gap-40"
     >
       <div className="leading-[0.8]">
         <h1 className="text-[130px] font-bold">UX</h1>
