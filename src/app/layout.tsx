@@ -3,6 +3,7 @@ import { Poppins, Madimi_One } from "next/font/google";
 import "./globals.css";
 import { Carrossel } from "@/components/sections/Carrossel";
 import { Footer } from "@/components/ui/Footer";
+import { Navbar } from "@/components/ui/Navbar";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${madimiOne.variable} bg-[#F7F7F7] antialiased flex flex-col min-h-screen`}
       >
+        <Navbar />
         {children}
         <footer>
           <Footer />

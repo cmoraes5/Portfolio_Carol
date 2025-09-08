@@ -3,9 +3,7 @@ import { Button } from "@/components/ui/Button";
 import PortraitFrame from "@/components/ui/PortraitFrame";
 import { Metadata } from "next";
 
-import {
-  DownloadSimple,
-} from "../../components/Icons";
+import { DownloadSimple } from "../../components/Icons";
 
 export const metadata: Metadata = {
   title: "Sobre",
@@ -13,12 +11,9 @@ export const metadata: Metadata = {
 
 export default function Sobre() {
   return (
-    <main className="flex flex-col items-center py-24 text-black w-full mx-auto">
-      <section
-        className="w-full flex flex-row items-center justify-center gap-[124px]
-        py-[180px] px-[100px]"
-      >
-        <PortraitFrame className="max-w-[300px]">
+    <main className="flex flex-col items-center text-black w-full mx-auto py-24 gap-[180px]">
+      <section className="w-full flex flex-row items-center justify-center gap-20  px-[100px] ">
+        <PortraitFrame size="large" className="max-w-[300px]" borderWidth={2}>
           <img src="/foto.png" alt="Foto" />
         </PortraitFrame>
 
@@ -42,10 +37,7 @@ export default function Sobre() {
         </div>
       </section>
 
-      <section
-        className="w-full flex flex-row items-center justify-center gap-[124px]
-        py-[180px] px-[100px]"
-      >
+      <section className="w-full flex flex-row items-center justify-center gap-[124px]  px-[100px] ">
         <div className="flex flex-col gap-12">
           <div>
             <img src="/Me_conheça.svg" alt="" />
@@ -76,8 +68,15 @@ export default function Sobre() {
               </ul>
             </AccordionItem>
 
-            <AccordionItem className="flex justify-center" title="Ver currículo completo">
-              <Button className="text-primary text-[32px] font-bold flex flex-row items-center gap-2 p-2">
+            <AccordionItem
+              className="flex justify-center"
+              title="Ver currículo completo"
+            >
+              <Button
+                className="text-primary text-[32px] font-bold flex flex-row items-center gap-2 p-2"
+                href="https://drive.google.com/file/d/1-9H6vXTXduSDYdRKjSK72P5qBLqguv_a/view"
+                target="_blank"
+              >
                 <DownloadSimple weight="bold" size={32} />
                 BAIXAR CURRÍCULO
               </Button>
@@ -88,6 +87,42 @@ export default function Sobre() {
         <div className="flex-shrink-0">
           <img src="/Avatar2.png" alt="Ilustration" />
         </div>
+      </section>
+
+      <section
+        className="w-full flex flex-row justify-center gap-[124px]
+        px-[100px] border-t-[1.5px]"
+      >
+        <PortraitFrame
+          borderWidth={1.5}
+          size="small"
+          className="w-[144px]"
+          lineHeight={319}
+        >
+          <img src="foto2.png" alt="" />
+        </PortraitFrame>
+
+        <div className="flex flex-col gap-6 items-center max-w-[713px] mt-[180px]">
+          <img src="Fora_do_trabalho.svg" alt="" className="h-[60px]" />
+
+          <p className="font-semibold text-[28px]">
+            Sou super comunicativa e adoro estar cercada de pessoas! No meu
+            tempo livre, estou sempre entre amigos e família, jogando um bom
+            jogo de tabuleiro, dançando ou cultivando boas memórias. Tenho um
+            olhar curioso para o mundo e gosto de observar comportamentos, desde
+            interações nas ruas até como as pessoas navegam por aplicativos. No
+            fundo, tudo vira inspiração!
+          </p>
+        </div>
+
+        <PortraitFrame
+          borderWidth={1.5}
+          size="small"
+          className="w-[144px]"
+          lineHeight={452}
+        >
+          <img src="foto1.png" alt="" />
+        </PortraitFrame>
       </section>
     </main>
   );

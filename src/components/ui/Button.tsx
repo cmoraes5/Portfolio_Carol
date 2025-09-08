@@ -6,14 +6,21 @@ interface ButtonProps {
   className?: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   href?: string;
+  target?: string;
 }
 
-export function Button({ children, className, onClick, href }: ButtonProps) {
+export function Button({
+  children,
+  className,
+  onClick,
+  href,
+  target,
+}: ButtonProps) {
   const buttonClasses = `cursor-action ${className || ''}`;
 
   if (href) {
     return (
-      <Link href={href} className={buttonClasses}>
+      <Link href={href} className={buttonClasses} target={target}>
         {children}
       </Link>
     );

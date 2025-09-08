@@ -20,7 +20,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <p className="text-3xl max-w-[600px] text-[#2E2E2E]">
+          <p className="text-3xl max-w-[600px] text-[#2E2E2E] leading-[39px]">
             Não crio telas bonitas, crio <br />
             experiências que fazem <br />
             sentido. Gosto de investigar, entender e transformar dores em
@@ -28,7 +28,7 @@ export default function Home() {
           </p>
 
           <Button
-            href="/portfolio"
+            href="#projetos"
             className="text-3xl font-bold mt-5 text-[#FB527A] w-fit underline"
           >
             Ver Projetos
@@ -101,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* GALERIA */}
-      <section className="flex flex-row w-full justify-center">
+      <section className="flex flex-row w-full justify-center"  id="projetos">
         <Galeria />
       </section>
     </main>

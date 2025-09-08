@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   ArrowFatLineUp,
@@ -14,7 +14,7 @@ export function Footer() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -26,27 +26,39 @@ export function Footer() {
             Vamos nos conectar!
           </h1>
 
-          <ul className="flex flex-row space-x-4">
-            <li>
-              <Button className="border border-secondary p-1" href="https://www.linkedin.com/in/carol-magdalena-176299274/">
-                <LinkedinLogo size={44} />
-              </Button>
-            </li>
-            <li>
-              <Button className="border border-secondary p-1" href="mailto:carol.ux.ui@gmail.com">
-                <EnvelopeSimple size={44} />
-              </Button>
-            </li>
-            <li>
-              <Button className="border border-secondary p-1" href="https://wa.me/5521966067793">
-                <WhatsappLogo size={44} />
-              </Button>
-            </li>
-          </ul>
+          <div className="flex flex-row gap-4">
+            <Button
+              className="border-2 border-secondary p-1"
+              href="https://www.linkedin.com/in/carol-magdalena-176299274/"
+              target="_blank"
+            >
+              <LinkedinLogo size={44} />
+            </Button>
+
+            <Button
+              className="border-2 border-secondary p-1"
+              href="mailto:carol.ux.ui@gmail.com"
+              target="_blank"
+            >
+              <EnvelopeSimple size={44} />
+            </Button>
+
+            <Button
+              className="border-2 border-secondary p-1"
+              href="https://wa.me/5521966067793"
+              target="_blank"
+            >
+              <WhatsappLogo size={44} />
+            </Button>
+          </div>
         </div>
 
         <div className="border-l border-secondary pl-14 flex flex-col justify-center space-y-2 ">
-          <Button className="text-primary text-[32px] font-bold flex flex-row items-center gap-2 p-2">
+          <Button
+            className="text-primary text-[32px] font-bold flex flex-row items-center gap-2 p-2"
+            href="https://drive.google.com/file/d/1-9H6vXTXduSDYdRKjSK72P5qBLqguv_a/view"
+            target="_blank"
+          >
             <DownloadSimple weight="bold" size={32} />
             BAIXAR CURRÍCULO
           </Button>

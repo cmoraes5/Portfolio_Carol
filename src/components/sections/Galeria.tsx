@@ -5,6 +5,7 @@
 //   type: 'large' | 'small';
 // };
 
+import { Button } from "../ui/Button";
 import { Card } from "../ui/Card";
 
 export function Galeria() {
@@ -58,28 +59,35 @@ export function Galeria() {
   // }
 
   return (
-    <section className="py-[120px] px-[100px] flex flex-col gap-18 items-center">
-      <Card />
+    <section className="py-[120px] px-[100px] flex flex-col gap-16 items-center">
+      <Button href="/case-study">
+        <Card />
+      </Button>
 
-      {/* Linha inferior com 3 blocos */}
       <div className="mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        <img
-          src="/teamspeak.png"
-          alt="TeamSpeak"
-          className="w-full h-auto object-contain"
-        />
+        <Button href="https://www.behance.net/gallery/204356427/Redesign-Teamspeak-%28UXUI%29" target="_blank">
+          <img
+            src="/teamspeak.png"
+            alt="TeamSpeak"
+            className="w-full h-auto object-contain rounded-[18px]"
+          />
+        </Button>
 
-        <img
-          src="/adopt.png"
-          alt="Adopt"
-          className="w-full h-auto object-contain"
-        />
+        <Button href="https://www.behance.net/gallery/230148661/ADOPT-Site-de-adocao-%28UXUI-responsivo%29" target="_blank">
+          <img
+            src="/adopt.jpg"
+            alt="Adopt"
+            className="w-full h-auto object-contain rounded-[18px]"
+          />
+        </Button>
 
-        <img
-          src="/bikcraft.png"
-          alt="Bikcraft"
-          className="w-full h-auto object-contain"
-        />
+        <Button href="https://www.figma.com/design/VXRLUAj3bqh6V43VCoFeBq/bikcraft-Wireframe?node-id=8-76&p=f&t=g6HKjAL1RbM8jccO-0" target="_blank">
+          <img
+            src="/bikcraft.png"
+            alt="Bikcraft"
+            className="w-full h-auto object-contain rounded-[18px]"
+          />
+        </Button>
       </div>
     </section>
   );

@@ -1,11 +1,11 @@
 export function Card() {
   return (
     <div
-      className="group pl-17 pr-[180px] pt-20 max-w-[1240px] rounded-3xl bg-linear-to-r
+      className="group pl-17 pr-[180px] pt-20 rounded-3xl bg-linear-to-r
      from-[#DED1C1] via-[#E6DED5] to-[#f4efe9] text-[#7F5528]
-      shadow-xs flex flex-row flex-wrap justify-center gap-40"
+      shadow-xs flex flex-row flex-wrap lg:flex-nowrap justify-center lg:gap-40"
     >
-      <div className="leading-[0.8]">
+      <div className="leading-[0.8] lg:block flex flex-row items-center">
         <h1 className="text-[130px] font-bold">UX</h1>
         <h3 className="text-[80px] font-medium">Case Study</h3>
       </div>
