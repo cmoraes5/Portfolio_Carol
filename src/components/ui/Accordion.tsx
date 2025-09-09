@@ -2,6 +2,7 @@
 
 import { useState, ReactNode } from "react";
 import { CaretDown, CaretUp } from "../Icons";
+import { Button } from "./Button";
 
 interface AccordionItemProps {
   title: string;
@@ -31,13 +32,13 @@ export function AccordionItem({
 
   return (
     <div>
-      <button
+      <Button
         onClick={() => setOpen(!open)}
         className="w-full flex justify-between items-center px-4 py-1 text-left font-normal text-[44px]"
       >
         {title}
         {open ? <CaretUp size={48} /> : <CaretDown size={48} />}
-      </button>
+      </Button>
 
       <div
         className={`overflow-hidden transition-all duration-300 ${

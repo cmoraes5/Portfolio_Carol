@@ -1,5 +1,6 @@
 "use client";
 
+import { toast } from "sonner";
 import {
   ArrowFatLineUp,
   DownloadSimple,
@@ -36,9 +37,11 @@ export function Footer() {
             </Button>
 
             <Button
+              onClick={() => {
+                navigator.clipboard.writeText("carol.ux.ui@gmail.com");
+                toast.success("Email copiado com sucesso!");
+              }}
               className="border-2 border-secondary p-1"
-              href="mailto:carol.ux.ui@gmail.com"
-              target="_blank"
             >
               <EnvelopeSimple size={44} />
             </Button>
@@ -56,8 +59,7 @@ export function Footer() {
         <div className="border-l border-secondary pl-14 flex flex-col justify-center space-y-2 ">
           <Button
             className="text-primary text-[32px] font-bold flex flex-row items-center gap-2 p-2"
-            href="https://drive.google.com/file/d/1-9H6vXTXduSDYdRKjSK72P5qBLqguv_a/view"
-            target="_blank"
+            href="../cv.pdf"
           >
             <DownloadSimple weight="bold" size={32} />
             BAIXAR CURRÍCULO

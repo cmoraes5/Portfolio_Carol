@@ -33,7 +33,7 @@ export function Navbar() {
         </div>
         <div className="flex items-center gap-10 px-[100px]">
           <Button
-            href="/curriculo.pdf"
+            href="/cv.pdf"
             target="_blank"
             className="text-primary flex gap-2 items-center hover:bg-primary hover:text-white p-2 transition-all duration-200"
           >
