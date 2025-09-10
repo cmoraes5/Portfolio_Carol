@@ -10,14 +10,14 @@ export default function Home() {
         <div className="flex flex-col max-w-[708px]">
           {/* Título com SVG posicionado */}
           <div>
-            <h1 className="text-[64px] font-semibold">
+            <h1 className="text-[64px] font-semibold leading-[64px]">
               Meu combustível é a curiosidade. Minha direção é o
-              <img
-                src="/IMPACTO.svg"
-                alt="Impacto"
-                className="inline-block ml-4 relative top-13"
-              />
             </h1>
+            <img
+              src="/IMPACTO.svg"
+              alt="Impacto"
+              className="inline-block relative"
+            />
           </div>
 
           <p className="text-3xl max-w-[600px] text-[#2E2E2E] leading-[39px]">
@@ -101,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* GALERIA */}
-      <section className="flex flex-row w-full justify-center"  id="projetos">
+      <section className="flex flex-row w-full justify-center" id="projetos">
         <Galeria />
       </section>
     </main>
