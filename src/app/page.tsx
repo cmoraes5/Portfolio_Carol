@@ -7,16 +7,16 @@ export default function Home() {
     <main className="flex flex-col items-center py-24 text-black w-full mx-auto">
       {/* FRASE DE IMPACTO */}
       <section className="flex flex-row gap-5 w-full justify-center px-[100px]">
-        <div className="flex flex-col max-w-[708px]">
+        <div className="flex flex-col">
           {/* Título com SVG posicionado */}
-          <div>
+          {/* <div className="bg-emerald-600">
             <h1 className="text-[64px] font-semibold leading-[64px]">
               Meu combustível é a curiosidade. Minha direção é o
             </h1>
             <img
               src="/IMPACTO.svg"
               alt="Impacto"
-              className="inline-block relative"
+              className="absolute ml-92 bottom-1/6"
             />
           </div>
 
@@ -25,7 +25,11 @@ export default function Home() {
             experiências que fazem <br />
             sentido. Gosto de investigar, entender e transformar dores em
             soluções reais.
-          </p>
+          </p> */}
+
+          <div>
+            <img src="/head.svg" alt="icon" />
+          </div>
 
           <Button
             href="#projetos"
