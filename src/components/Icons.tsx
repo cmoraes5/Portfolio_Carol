@@ -9,6 +9,8 @@ import {
   WhatsappLogoIcon,
   CaretUpIcon,
   CaretDownIcon,
+  ListIcon,
+  XIcon,
 } from "@phosphor-icons/react";
 
 export const ArrowUpRight = ArrowUpRightIcon;
@@ -26,3 +28,7 @@ export const WhatsappLogo = WhatsappLogoIcon;
 export const CaretUp  = CaretUpIcon;
 
 export const CaretDown  = CaretDownIcon;
+
+export const List = ListIcon;
+
+export const X = XIcon;

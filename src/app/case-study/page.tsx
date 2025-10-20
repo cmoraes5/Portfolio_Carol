@@ -3,22 +3,34 @@ import { Button } from "@/components/ui/Button";
 
 export default function CaseStudyPage() {
   return (
-    <main className="flex flex-col items-center py-24 text-black w-full mx-auto">
-      <section className="flex flex-col gap-10 lg:gap-3 w-full justify-center px-[100px]">
-        <div className="flex flex-row items-center justify-center lg:justify-normal">
-          <h1 className="text-[130px] font-bold text-[#7F5528] leading-[28px] ml-16">UX</h1>
-          <span className="text-[40px] font-medium text-[#7F5528]">
+    <main className="flex flex-col items-center py-16 md:py-24 text-black w-full mx-auto">
+      <section className="flex flex-col gap-10 w-full justify-center px-4 sm:px-8 md:px-16 lg:px-24">
+        <div className="flex flex-col lg:flex-row items-center justify-center text-center lg:text-left gap-4">
+          <h1 className="text-7xl sm:text-9xl md:text-[130px] font-bold text-[#7F5528] leading-none">
+            UX
+          </h1>
+          <span className="text-2xl sm:text-3xl md:text-[40px] font-medium text-[#7F5528]">
             Case Study
           </span>
         </div>
 
-        <div className="flex flex-row justify-center items-center gap-8">
-          <img src="/Images2.png" alt="" className="block lg:hidden" />
-          <img src="/Images.png" alt="" className="hidden lg:block" />
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mt-8">
+          <div className="flex-shrink-0">
+            <img
+              src="/Images2.png"
+              alt="Case Study Image Mobile"
+              className="block lg:hidden max-w-full h-auto rounded-lg shadow-md"
+            />
+            <img
+              src="/Images.png"
+              alt="Case Study Image Desktop"
+              className="hidden lg:block max-w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
 
-          <div className="flex flex-col gap-4">
-            <h1 className="text-4xl font-semibold">Spoiler</h1>
-            <p className="font-medium text-2xl">
+          <div className="flex flex-col gap-4 max-w-lg text-center lg:text-left">
+            <h1 className="text-3xl md:text-4xl font-semibold">Spoiler</h1>
+            <p className="font-medium text-lg md:text-2xl">
               O projeto está pronto, mas o código ainda não chegou até aqui 🚧.
               Mas você não precisa esperar: baixe o PDF e veja meu estudo de
               caso e todo o raciocínio por trás da solução.
@@ -27,7 +39,7 @@ export default function CaseStudyPage() {
             <Button
               href="/case (1).pdf"
               target="_blank"
-              className="flex items-center bg-primary font-semibold text-2xl text-[#F7F7F7] rounded-xl px-3 py-2 w-fit"
+              className="flex items-center justify-center lg:justify-start bg-primary font-semibold text-lg md:text-2xl text-[#F7F7F7] rounded-xl px-4 py-3 w-fit mx-auto lg:mx-0 mt-4"
             >
               Ver projeto completo
               <ArrowUpRight size={24} weight="bold" />

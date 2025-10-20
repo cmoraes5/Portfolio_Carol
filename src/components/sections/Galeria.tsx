@@ -59,33 +59,57 @@ export function Galeria() {
   // }
 
   return (
-    <section className="py-[120px] px-[100px] flex flex-col gap-16 items-center">
-      <Button href="/case-study">
-        <Card />
+    <section className="py-16 md:py-24 px-4 sm:px-8 md:px-16 lg:px-24 flex flex-col gap-12 md:gap-16 items-center w-full">
+      <Button href="/case-study" className="w-full">
+        {/* <Card /> */}
+
+        <img
+          src="/card_mobile.png"
+          alt="Card"
+          className="w-full h-auto object-cover md:hidden"
+        />
+
+        <img
+          src="/card_desktop.svg"
+          alt="Card"
+          className="w-full h-auto object-cover hidden md:block"
+        />
       </Button>
 
-      <div className="mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        <Button href="https://www.behance.net/gallery/204356427/Redesign-Teamspeak-%28UXUI%29" target="_blank">
+      <div className="mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full">
+        <Button
+          href="https://www.behance.net/gallery/204356427/Redesign-Teamspeak-%28UXUI%29"
+          target="_blank"
+          className="w-full"
+        >
           <img
             src="/teamspeak.png"
             alt="TeamSpeak"
-            className="w-full h-auto object-contain rounded-[18px]"
+            className="w-full h-auto object-cover rounded-[18px]"
           />
         </Button>
 
-        <Button href="https://www.behance.net/gallery/230148661/ADOPT-Site-de-adocao-%28UXUI-responsivo%29" target="_blank">
+        <Button
+          href="https://www.behance.net/gallery/230148661/ADOPT-Site-de-adocao-%28UXUI-responsivo%29"
+          target="_blank"
+          className="w-full"
+        >
           <img
             src="/adopt.jpg"
             alt="Adopt"
-            className="w-full h-auto object-contain rounded-[18px]"
+            className="w-full h-auto object-cover rounded-[18px]"
           />
         </Button>
 
-        <Button href="https://www.figma.com/design/VXRLUAj3bqh6V43VCoFeBq/bikcraft-Wireframe?node-id=8-76&p=f&t=g6HKjAL1RbM8jccO-0" target="_blank">
+        <Button
+          href="https://www.figma.com/design/VXRLUAj3bqh6V43VCoFeBq/bikcraft-Wireframe?node-id=8-76&p=f&t=g6HKjAL1RbM8jccO-0"
+          target="_blank"
+          className="w-full"
+        >
           <img
             src="/bikcraft.png"
             alt="Bikcraft"
-            className="w-full h-auto object-contain rounded-[18px]"
+            className="w-full h-auto object-cover rounded-[18px]"
           />
         </Button>
       </div>

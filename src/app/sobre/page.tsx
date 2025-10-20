@@ -12,23 +12,23 @@ export const metadata: Metadata = {
 export default function Sobre() {
   return (
     <main className="flex flex-col items-center text-black w-full mx-auto py-24 gap-[180px]">
-      <section className="w-full flex flex-row items-center justify-center gap-20  px-[100px] ">
-        <PortraitFrame size="large" className="max-w-[300px]" borderWidth={2}>
+      <section className="w-full flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 px-4 sm:px-8 md:px-16 lg:px-24 text-center md:text-left">
+        <PortraitFrame size="large" className="max-w-[250px] md:max-w-[300px]" borderWidth={2}>
           <img src="/foto.png" alt="Foto" />
         </PortraitFrame>
 
-        <div className="max-w-[800px]">
-          <div className="flex flex-row items-center gap-4">
+        <div className="max-w-full md:max-w-[800px]">
+          <div className="flex flex-row items-center justify-center md:justify-start gap-4">
             <div>
-              <img src="/SobreMim.svg" alt="Sobre Mim (Palavra)" />
+              <img src="/SobreMim.svg" alt="Sobre Mim (Palavra)" className="h-12 md:h-auto" />
             </div>
 
             <div className="-rotate-[30deg]">
-              <img src="/Foguete.svg" alt="Ilustration" className="h-[57px]" />
+              <img src="/Foguete.svg" alt="Ilustration" className="h-[40px] md:h-[57px]" />
             </div>
           </div>
 
-          <p className="text-[28px] text-[#2E2E2E] mt-3">
+          <p className="text-lg sm:text-xl md:text-[28px] text-[#2E2E2E] mt-3">
             Sou UX/UI designer júnior formada em Design Gráfico, apaixonada por
             mergulhar em ideias, transformar dados em decisões e, acima de tudo,
             ouvir. Atualmente, também atuo como UX/UI no Pipoca Ágil, em um
@@ -37,15 +37,15 @@ export default function Sobre() {
         </div>
       </section>
 
-      <section className="w-full flex flex-row items-center justify-center gap-[124px]  px-[100px] ">
-        <div className="flex flex-col gap-12">
+      <section className="w-full flex flex-col lg:flex-row items-center justify-center gap-12 md:gap-24 px-4 sm:px-8 md:px-16 lg:px-24 text-center lg:text-left">
+        <div className="flex flex-col gap-12 items-center lg:items-start">
           <div>
-            <img src="/Me_conheça.svg" alt="" />
+            <img src="/Me_conheça.svg" alt="" className="h-12 md:h-auto" />
           </div>
 
-          <Accordion className="max-w-[700px]">
+          <Accordion className="max-w-full md:max-w-[700px]">
             <AccordionItem title="Experiência">
-              <p>
+              <p className="text-base md:text-lg">
                 Atuo como UX/UI Designer em um projeto voltado à prevenção do
                 burnout. Participo de todas as etapas de UX e UI: desde a
                 análise de dados de pesquisa até a definição de funcionalidades
@@ -60,7 +60,7 @@ export default function Sobre() {
             </AccordionItem>
 
             <AccordionItem title="Formada em">
-              <ul className="list-disc pl-5">
+              <ul className="list-disc pl-5 text-base md:text-lg">
                 <li>Universidade Veiga de Almeida - Design Gráfico</li>
                 <li>Design Thinking - Tera</li>
                 <li>UI Design avançado / UX Design Heurísticas - Origamid</li>
@@ -73,7 +73,7 @@ export default function Sobre() {
               title="Ver currículo completo"
             >
               <Button
-                className="text-primary text-[32px] font-bold flex flex-row items-center gap-2 p-2"
+                className="text-primary text-xl md:text-2xl font-bold flex flex-row items-center gap-2 p-2"
                 href="https://drive.google.com/file/d/1-9H6vXTXduSDYdRKjSK72P5qBLqguv_a/view"
                 target="_blank"
               >
@@ -84,28 +84,28 @@ export default function Sobre() {
           </Accordion>
         </div>
 
-        <div className="flex-shrink-0">
-          <img src="/Avatar2.png" alt="Ilustration" />
+        <div className="flex-shrink-0 mt-12 lg:mt-0">
+          <img src="/Avatar2.png" alt="Ilustration" className="max-w-full h-auto" />
         </div>
       </section>
 
       <section
-        className="w-full flex flex-row justify-center gap-[124px]
-        px-[100px] border-t-[1.5px]"
+        className="w-full flex flex-col lg:flex-row items-center justify-center gap-12 md:gap-24
+        px-4 sm:px-8 md:px-16 lg:px-24 py-16 md:py-24 border-t-[1.5px] text-center lg:text-left"
       >
         <PortraitFrame
           borderWidth={1.5}
           size="small"
-          className="w-[144px]"
+          className="w-[144px] hidden lg:block"
           lineHeight={319}
         >
           <img src="foto2.png" alt="" />
         </PortraitFrame>
 
-        <div className="flex flex-col gap-6 items-center max-w-[713px] mt-[180px]">
-          <img src="Fora_do_trabalho.svg" alt="" className="h-[60px]" />
+        <div className="flex flex-col gap-6 items-center max-w-full lg:max-w-[713px]">
+          <img src="Fora_do_trabalho.svg" alt="" className="h-12 md:h-[60px]" />
 
-          <p className="font-semibold text-[28px]">
+          <p className="font-semibold text-lg sm:text-xl md:text-[28px]">
             Sou super comunicativa e adoro estar cercada de pessoas! No meu
             tempo livre, estou sempre entre amigos e família, jogando um bom
             jogo de tabuleiro, dançando ou cultivando boas memórias. Tenho um
@@ -118,7 +118,7 @@ export default function Sobre() {
         <PortraitFrame
           borderWidth={1.5}
           size="small"
-          className="w-[144px]"
+          className="w-[144px] hidden lg:block"
           lineHeight={452}
         >
           <img src="foto1.png" alt="" />

@@ -1,28 +1,48 @@
 export function Card() {
   return (
     <div
-      className="group pl-17 pr-[180px] pt-20 rounded-3xl bg-linear-to-r
-     from-[#DED1C1] via-[#E6DED5] to-[#f4efe9] text-[#7F5528]
-      shadow-xs flex flex-row flex-wrap lg:flex-nowrap justify-center lg:gap-40"
+      className="
+        group flex flex-col lg:flex-row items-center justify-between
+        bg-gradient-to-r from-[#DED1C1] via-[#E6DED5] to-[#f4efe9]
+        text-[#7F5528] shadow-xs rounded-3xl
+        p-6 sm:p-10 lg:pl-16 lg:pr-32 lg:pt-20
+        w-full max-w-[1300px] mx-auto
+        relative overflow-hidden
+      "
     >
-      <div className="leading-[0.8] lg:block flex flex-row items-center">
-        <h1 className="text-[130px] font-bold">UX</h1>
-        <h3 className="text-[80px] font-medium">Case Study</h3>
+      {/* Texto */}
+      <div className="flex flex-col lg:leading-[0.8] items-center lg:items-start text-center lg:text-left">
+        <h1 className="text-[64px] sm:text-[90px] lg:text-[130px] font-bold leading-[0.9]">
+          UX
+        </h1>
+        <h3 className="text-[36px] sm:text-[56px] lg:text-[80px] font-medium">
+          Case Study
+        </h3>
       </div>
 
-      <div className="flex flex-row relative">
+      {/* Imagens */}
+      <div className="relative flex justify-center items-center mt-10 lg:mt-0 w-full lg:w-auto">
+        {/* Macbook */}
         <img
-          className="absolute top-24 right-5/9
-         transition-transform duration-1000 group-hover:rotate-2"
-          src="iPad2.png"
+          src="/Macbook.png"
           alt=""
+          className="w-[220px] sm:w-[320px] lg:w-[500px] h-auto z-10"
         />
-        <img className="" src="/Macbook.png" alt="" />
+
+        {/* iPad atrás */}
         <img
-          className="left-10/12 -top-7 absolute h-[180px]
-        transition-transform delay-75 duration-2000 group-hover:-rotate-6"
+          src="/iPad2.png"
+          alt=""
+          className="absolute w-[140px] sm:w-[200px] lg:w-[300px] top-10 -left-6 sm:-left-12
+          transition-transform duration-700 group-hover:rotate-2"
+        />
+
+        {/* iPad na frente */}
+        <img
           src="/iPad.png"
           alt=""
+          className="absolute w-[130px] sm:w-[190px] lg:w-[280px] -top-6 right-0
+          transition-transform duration-700 group-hover:-rotate-6"
         />
       </div>
     </div>
