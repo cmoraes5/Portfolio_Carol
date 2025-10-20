@@ -10,7 +10,7 @@ export default function Home() {
         <div className="flex flex-col relative">
           {/* Título com SVG posicionado */}
           <div>
-            <img src="/Head.svg" alt="icon" className="w-full flex" />
+            <img src="/head.svg" alt="Head" className="w-full flex" />
           </div>
 
           <div className="flex flex-col absolute gap-4 top-2/3 pt-2 md:gap-6 md:top-3/12 md:pt-9">
