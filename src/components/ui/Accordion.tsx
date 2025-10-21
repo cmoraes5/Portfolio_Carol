@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, ReactNode } from "react";
+import { useState, ReactNode, useEffect } from "react";
 import { CaretDown, CaretUp } from "../Icons";
 import { Button } from "./Button";
 
@@ -29,15 +29,33 @@ export function AccordionItem({
   className,
 }: AccordionItemProps) {
   const [open, setOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div>
       <Button
         onClick={() => setOpen(!open)}
-        className="w-full flex justify-between items-center px-4 py-1 text-left font-normal text-[44px]"
+        className="w-full flex justify-between items-center px-4 py-1 text-left font-normal text-base md:text-[44px]"
       >
         {title}
-        {open ? <CaretUp size={48} /> : <CaretDown size={48} />}
+        {open ? (
+          <CaretUp size={isMobile ? 12.5 : 48} />
+        ) : (
+          <CaretDown size={isMobile ? 12.5 : 48} />
+        )}
       </Button>
 
       <div

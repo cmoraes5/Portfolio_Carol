@@ -76,7 +76,7 @@ export default function Sobre() {
             </AccordionItem>
 
             <AccordionItem title="Formada em">
-              <ul className="list-disc pl-5 text-base md:text-lg">
+              <ul className="list-disc pl-5 text-left text-sm md:text-lg">
                 <li>Universidade Veiga de Almeida - Design Gráfico</li>
                 <li>Design Thinking - Tera</li>
                 <li>UI Design avançado / UX Design Heurísticas - Origamid</li>

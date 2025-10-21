@@ -4,8 +4,8 @@ export function Galeria() {
   return (
     <section className="py-16 md:py-24 px-4 sm:px-8 md:px-16 lg:px-24 flex flex-col gap-12 md:gap-16 items-center w-full">
       {/* === Versão MOBILE === */}
-      <div className="gap-4 w-full max-w-md md:hidden">
-        <div className="grid grid-cols-3">
+      <div className="flex flex-col gap-3 max-w-md md:hidden">
+        <div className="grid grid-cols-3 gap-3">
         {/* Linha de cima (3 colunas) */}
         <Button
           href="/case-study"
@@ -34,7 +34,7 @@ export function Galeria() {
       </div>
 
         {/* Linha de baixo (2 colunas) */}
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 gap-3">
         <Button
           href="https://www.behance.net/gallery/204356427/Redesign-Teamspeak-%28UXUI%29"
           target="_blank"

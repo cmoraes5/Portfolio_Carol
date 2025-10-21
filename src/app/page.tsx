@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* ONDE A CURIOSIDADE VIRA IMPACTO */}
-      <section className="w-full flex flex-col md:flex-row gap-6 items-center justify-center text-center md:text-left py-24 px-4 sm:px-8 md:px-16 lg:px-24">
+      <section className="w-full flex flex-col md:flex-row gap-6 items-center justify-center text-center md:text-left pt-36 px-4 md:py-32 sm:px-8 md:px-16 lg:px-24">
         <div className="flex flex-col md:flex-row items-center gap-6 max-w-7xl">
           <div className="flex-shrink-0 inline md:hidden">
             <img
