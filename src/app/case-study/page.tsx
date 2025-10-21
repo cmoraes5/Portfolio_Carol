@@ -19,12 +19,12 @@ export default function CaseStudyPage() {
             <img
               src="/Images2.png"
               alt="Case Study Image Mobile"
-              className="block lg:hidden max-w-full h-auto rounded-lg shadow-md"
+              className="block lg:hidden max-w-full h-auto"
             />
             <img
               src="/Images.png"
               alt="Case Study Image Desktop"
-              className="hidden lg:block max-w-full h-auto rounded-lg shadow-md"
+              className="hidden lg:block max-w-full h-auto"
             />
           </div>
 

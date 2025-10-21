@@ -1,102 +1,49 @@
-// type Project = {
-//   id: number;
-//   title: string;
-//   image: string;
-//   type: 'large' | 'small';
-// };
-
 import { Button } from "../ui/Button";
-import { Card } from "../ui/Card";
 
 export function Galeria() {
-  // const [projects, setProjects] = useState([]);
-
-  //   useEffect(() => {
-  //     const fetchProjects = async () => {
-  //       try {
-  //         const res = await fetch(
-  //           `https://api.behance.net/v2/users/SEU_USERNAME/projects?client_id=SUA_API_KEY`
-  //         );
-  //         const data = await res.json();
-  //         setProjects(data.projects || []);
-  //       } catch (err) {
-  //         console.error("Erro ao buscar projetos do Behance:", err);
-  //       }
-  //     };
-
-  //     fetchProjects();
-  //   }, []);
-
-  //   return (
-  //     <div className="group px-17 pb-[120px] pt-20 rounded-3xl bg-[#F6F1EB]
-  //       text-[#7F5528] shadow-md flex flex-row items-center justify-between"
-  //     >
-  //       {/* Texto */}
-  //       <div className="flex flex-col gap-3">
-  //         <h1 className="text-[130px] font-bold">UX</h1>
-  //         <span className="text-[80px] font-medium">Case Study</span>
-  //       </div>
-
-  //       {/* Banners vindos do Behance */}
-  //       <div className="flex flex-row relative items-center">
-  //         {projects.slice(0, 3).map((proj, i) => (
-  //           <img
-  //             key={proj.id}
-  //             src={proj.covers["808"]} // pega o banner (tem 115, 202, 404, 808, original)
-  //             alt={proj.name}
-  //             className={`absolute shadow-lg ${
-  //               i === 0
-  //                 ? "-left-28 top-12 w-[300px] rotate-[-8deg]"
-  //                 : i === 1
-  //                 ? "relative z-10 w-[600px]"
-  //                 : "-right-20 top-8 w-[220px] rotate-[6deg]"
-  //             }`}
-  //           />
-  //         ))}
-  //       </div>
-  //     </div>
-  //   );
-  // }
-
   return (
     <section className="py-16 md:py-24 px-4 sm:px-8 md:px-16 lg:px-24 flex flex-col gap-12 md:gap-16 items-center w-full">
-      <Button href="/case-study" className="w-full">
-        {/* <Card /> */}
-
-        <img
-          src="/card_mobile.png"
-          alt="Card"
-          className="w-full h-auto object-cover md:hidden"
-        />
-
-        <img
-          src="/card_desktop.svg"
-          alt="Card"
-          className="w-full h-auto object-cover hidden md:block"
-        />
-      </Button>
-
-      <div className="mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full">
+      {/* === Versão MOBILE === */}
+      <div className="gap-4 w-full max-w-md md:hidden">
+        <div className="grid grid-cols-3">
+        {/* Linha de cima (3 colunas) */}
         <Button
-          href="https://www.behance.net/gallery/204356427/Redesign-Teamspeak-%28UXUI%29"
-          target="_blank"
-          className="w-full"
+          href="/case-study"
+          className="col-span-2 transition-transform duration-300 hover:scale-[1.03]"
         >
           <img
-            src="/teamspeak.png"
-            alt="TeamSpeak"
+            src="/card_mobile.png"
+            alt="UX Case Study"
+            loading="lazy"
             className="w-full h-auto object-cover rounded-[18px]"
           />
         </Button>
 
         <Button
-          href="https://www.behance.net/gallery/230148661/ADOPT-Site-de-adocao-%28UXUI-responsivo%29"
+          href="https://www.behance.net/gallery/204356427/Redesign-Teamspeak-%28UXUI%29"
           target="_blank"
-          className="w-full"
+          className="col-span-1 transition-transform duration-300 hover:scale-[1.03]"
+        >
+          <img
+            src="/teamspeak_mobile.png"
+            alt="Redesign TeamSpeak"
+            loading="lazy"
+            className="w-full h-auto object-cover rounded-[18px]"
+          />
+        </Button>
+      </div>
+
+        {/* Linha de baixo (2 colunas) */}
+        <div className="grid grid-cols-2">
+        <Button
+          href="https://www.behance.net/gallery/204356427/Redesign-Teamspeak-%28UXUI%29"
+          target="_blank"
+          className="col-span-1 transition-transform duration-300 hover:scale-[1.03]"
         >
           <img
             src="/adopt.jpg"
-            alt="Adopt"
+            alt="Redesign TeamSpeak"
+            loading="lazy"
             className="w-full h-auto object-cover rounded-[18px]"
           />
         </Button>
@@ -104,11 +51,69 @@ export function Galeria() {
         <Button
           href="https://www.figma.com/design/VXRLUAj3bqh6V43VCoFeBq/bikcraft-Wireframe?node-id=8-76&p=f&t=g6HKjAL1RbM8jccO-0"
           target="_blank"
-          className="w-full"
+          className="col-span-1 transition-transform duration-300 hover:scale-[1.03]"
         >
           <img
             src="/bikcraft.png"
-            alt="Bikcraft"
+            alt="Bikcraft Layout"
+            loading="lazy"
+            className="w-full h-auto object-cover rounded-[18px]"
+          />
+        </Button>
+        </div>
+      </div>
+
+      {/* === Versão DESKTOP === */}
+      <div className="hidden md:grid grid-cols-3 gap-6 w-full max-w-6xl">
+        {/* Linha de cima (1 card ocupando 3 colunas) */}
+        <Button
+          href="/case-study"
+          className="col-span-3 transition-transform duration-300 hover:scale-[1.03]"
+        >
+          <img
+            src="/card_desktop.svg"
+            alt="UX Case Study"
+            loading="lazy"
+            className="w-full h-auto object-cover rounded-[18px]"
+          />
+        </Button>
+
+        {/* Linha de baixo (3 cards individuais) */}
+        <Button
+          href="https://www.behance.net/gallery/204356427/Redesign-Teamspeak-%28UXUI%29"
+          target="_blank"
+          className="transition-transform duration-300 hover:scale-[1.03]"
+        >
+          <img
+            src="/teamspeak.png"
+            alt="Redesign TeamSpeak"
+            loading="lazy"
+            className="w-full h-auto object-cover rounded-[18px]"
+          />
+        </Button>
+
+        <Button
+          href="https://www.behance.net/gallery/230148661/ADOPT-Site-de-adocao-%28UXUI-responsivo%29"
+          target="_blank"
+          className="transition-transform duration-300 hover:scale-[1.03]"
+        >
+          <img
+            src="/adopt.jpg"
+            alt="Design Responsivo"
+            loading="lazy"
+            className="w-full h-auto object-cover rounded-[18px]"
+          />
+        </Button>
+
+        <Button
+          href="https://www.figma.com/design/VXRLUAj3bqh6V43VCoFeBq/bikcraft-Wireframe?node-id=8-76&p=f&t=g6HKjAL1RbM8jccO-0"
+          target="_blank"
+          className="transition-transform duration-300 hover:scale-[1.03]"
+        >
+          <img
+            src="/bikcraft.png"
+            alt="Bikcraft Layout"
+            loading="lazy"
             className="w-full h-auto object-cover rounded-[18px]"
           />
         </Button>

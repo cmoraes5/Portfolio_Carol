@@ -13,18 +13,30 @@ export default function Sobre() {
   return (
     <main className="flex flex-col items-center text-black w-full mx-auto py-24 gap-[180px]">
       <section className="w-full flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20 px-4 sm:px-8 md:px-16 lg:px-24 text-center md:text-left">
-        <PortraitFrame size="large" className="max-w-[250px] md:max-w-[300px]" borderWidth={2}>
+        <PortraitFrame
+          size="large"
+          className="max-w-[250px] md:max-w-[300px]"
+          borderWidth={2}
+        >
           <img src="/foto.png" alt="Foto" />
         </PortraitFrame>
 
         <div className="max-w-full md:max-w-[800px]">
           <div className="flex flex-row items-center justify-center md:justify-start gap-4">
             <div>
-              <img src="/SobreMim.svg" alt="Sobre Mim (Palavra)" className="h-12 md:h-auto" />
+              <img
+                src="/SobreMim.svg"
+                alt="Sobre Mim (Palavra)"
+                className="h-12 md:h-auto"
+              />
             </div>
 
             <div className="-rotate-[30deg]">
-              <img src="/Foguete.svg" alt="Ilustration" className="h-[40px] md:h-[57px]" />
+              <img
+                src="/Foguete.svg"
+                alt="Ilustration"
+                className="h-[40px] md:h-[57px]"
+              />
             </div>
           </div>
 
@@ -39,8 +51,12 @@ export default function Sobre() {
 
       <section className="w-full flex flex-col lg:flex-row items-center justify-center gap-12 md:gap-24 px-4 sm:px-8 md:px-16 lg:px-24 text-center lg:text-left">
         <div className="flex flex-col gap-12 items-center lg:items-start">
-          <div>
-            <img src="/Me_conheça.svg" alt="" className="h-12 md:h-auto" />
+          <div className="flex flex-row w-full justify-center gap-2">
+            <img
+              src="/Me_conheça.svg"
+              alt=""
+              className="scale-90 md:scale-100"
+            />
           </div>
 
           <Accordion className="max-w-full md:max-w-[700px]">
@@ -85,27 +101,33 @@ export default function Sobre() {
         </div>
 
         <div className="flex-shrink-0 mt-12 lg:mt-0">
-          <img src="/Avatar2.png" alt="Ilustration" className="max-w-full h-auto" />
+          <img
+            src="/Avatar2.png"
+            alt="Ilustration"
+            className="max-w-full h-auto hidden md:block"
+          />
         </div>
       </section>
 
       <section
-        className="w-full flex flex-col lg:flex-row items-center justify-center gap-12 md:gap-24
-        px-4 sm:px-8 md:px-16 lg:px-24 py-16 md:py-24 border-t-[1.5px] text-center lg:text-left"
+        className="w-full flex flex-row justify-center gap-[124px]
+        px-[100px] border-t-[1.5px]"
       >
-        <PortraitFrame
-          borderWidth={1.5}
-          size="small"
-          className="w-[144px] hidden lg:block"
-          lineHeight={319}
-        >
-          <img src="foto2.png" alt="" />
-        </PortraitFrame>
+        <span className="hidden md:block">
+          <PortraitFrame
+            borderWidth={1.5}
+            size="small"
+            className="w-[144px] hidden md:block"
+            lineHeight={319}
+          >
+            <img src="foto2.png" alt="" />
+          </PortraitFrame>
+        </span>
 
-        <div className="flex flex-col gap-6 items-center max-w-full lg:max-w-[713px]">
+        <div className="flex flex-col gap-6 items-center max-w-[713px] mt-[180px]">
           <img src="Fora_do_trabalho.svg" alt="" className="h-12 md:h-[60px]" />
 
-          <p className="font-semibold text-lg sm:text-xl md:text-[28px]">
+          <p className="md:font-semibold text-lg sm:text-xs md:text-[28px]">
             Sou super comunicativa e adoro estar cercada de pessoas! No meu
             tempo livre, estou sempre entre amigos e família, jogando um bom
             jogo de tabuleiro, dançando ou cultivando boas memórias. Tenho um
@@ -115,14 +137,16 @@ export default function Sobre() {
           </p>
         </div>
 
-        <PortraitFrame
-          borderWidth={1.5}
-          size="small"
-          className="w-[144px] hidden lg:block"
-          lineHeight={452}
-        >
-          <img src="foto1.png" alt="" />
-        </PortraitFrame>
+        <span className="hidden md:block">
+          <PortraitFrame
+            borderWidth={1.5}
+            size="small"
+            className="w-[144px]"
+            lineHeight={452}
+          >
+            <img src="foto1.png" alt="" />
+          </PortraitFrame>
+        </span>
       </section>
     </main>
   );
