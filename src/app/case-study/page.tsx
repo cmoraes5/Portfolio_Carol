@@ -39,7 +39,7 @@ export default function CaseStudyPage() {
             <Button
               href="/case (1).pdf"
               target="_blank"
-              className="flex items-center justify-center lg:justify-start bg-primary font-semibold text-lg md:text-2xl text-[#F7F7F7] rounded-xl px-4 py-3 w-fit mx-auto lg:mx-0 mt-4"
+              className="flex items-center justify-center lg:justify-start bg-primary font-semibold text-lg md:text-2xl text-white rounded-xl px-4 py-3 w-fit mx-auto lg:mx-0 mt-4"
             >
               Ver projeto completo
               <ArrowUpRight size={24} weight="bold" />

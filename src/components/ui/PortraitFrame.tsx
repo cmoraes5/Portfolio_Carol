@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 interface PortraitFrameProps {
   children: ReactNode;
   className?: string;
-  size?: "small" | "large";
+  size?: "small" | "medium" | "large";
   lineHeight?: number;
   linePosition?: "top" | "bottom";
   borderWidth?: number;
@@ -19,6 +19,10 @@ export default function PortraitFrame({
 }: PortraitFrameProps) {
   const variants = {
     small: {
+      square: "w-[12px] h-[12px]",
+      padding: "p-[8px]",
+    },
+    medium: {
       square: "w-[18px] h-[18px]",
       padding: "p-[14px]",
     },

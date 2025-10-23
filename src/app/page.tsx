@@ -86,12 +86,13 @@ export default function Home() {
           <Button
             href="/sobre"
             className="
-              flex flex-row mt-6 items-center space-x-1 px-3 py-1 w-fit bg-[#EC2B58] font-semibold text-sm text-white rounded-sm
-              md:text-2xl md:py-2 md:rounded-lg
-             "
-          >
+              flex flex-row mt-6 items-center space-x-2 px-4 py-3 w-fit bg-primary font-semibold text-base text-white rounded-xl
+              md:text-2xl md:py-2">
+
+
+
             <span>Conheça minha história</span>
-            <ArrowUpRight className="text-base md:text-[28px]" weight="bold" />
+            <ArrowUpRight className="text-lg md:text-[28px]" weight="bold" />
           </Button>
         </div>
       </section>
