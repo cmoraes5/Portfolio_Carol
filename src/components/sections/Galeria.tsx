@@ -36,13 +36,13 @@ export function Galeria() {
         {/* Linha de baixo (2 colunas) */}
         <div className="grid grid-cols-2">
         <Button
-          href="https://www.behance.net/gallery/204356427/Redesign-Teamspeak-%28UXUI%29"
+          href="https://www.behance.net/gallery/230148661/ADOPT-Site-de-adocao-(UXUI-responsivo)"
           target="_blank"
           className="col-span-1 transition-transform duration-300 hover:scale-[1.03]"
         >
           <img
             src="/adopt_mobile.png"
-            alt="Redesign TeamSpeak"
+            alt="Adopt Design Responsivo"
             loading="lazy"
             className="w-full h-auto object-cover rounded-[18px]"
           />
