@@ -106,7 +106,7 @@ export default function Sobre() {
             >
               <Button
                 className="text-primary text-xl md:text-2xl font-bold flex flex-row items-center gap-2 p-2"
-                href="https://drive.google.com/file/d/1-9H6vXTXduSDYdRKjSK72P5qBLqguv_a/view"
+                href="https://drive.google.com/file/d/1be4QEXJGk1EPh66alBymBYTXfZTSpK7n/view?usp=sharing"
                 target="_blank"
               >
                 <DownloadSimple weight="bold" size={32} />

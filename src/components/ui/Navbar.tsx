@@ -49,7 +49,7 @@ export function Navbar() {
         {/* Ações - Visível em telas médias e grandes */}
         <div className="hidden md:flex items-center gap-6">
           <Button
-            href="/cv.pdf"
+            href="https://drive.google.com/file/d/1be4QEXJGk1EPh66alBymBYTXfZTSpK7n/view?usp=sharing"
             target="_blank"
             className="text-primary flex gap-2 items-center hover:bg-primary hover:text-white p-2 transition-all duration-200 rounded-md"
           >
@@ -81,7 +81,7 @@ export function Navbar() {
             </Button>
             <div className="border-t border-[#717171] w-full my-2" />
             <Button
-              href="/cv.pdf"
+              href="https://drive.google.com/file/d/1be4QEXJGk1EPh66alBymBYTXfZTSpK7n/view?usp=sharing"
               target="_blank"
               className="text-primary flex gap-2 items-center justify-center w-full p-2 rounded-md"
             >
