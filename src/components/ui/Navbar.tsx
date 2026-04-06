@@ -49,7 +49,7 @@ export function Navbar() {
         {/* Ações - Visível em telas médias e grandes */}
         <div className="hidden md:flex items-center gap-6">
           <Button
-            href="https://drive.google.com/file/d/1be4QEXJGk1EPh66alBymBYTXfZTSpK7n/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Ea4U5eRJlB008oU7Mp106BlidvF8Io6e/view"
             target="_blank"
             className="text-primary flex gap-2 items-center hover:bg-primary hover:text-white p-2 transition-all duration-200 rounded-md"
           >
@@ -70,18 +70,30 @@ export function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-[#F7F7F7] shadow-lg">
           <div className="flex flex-col items-center gap-4 p-4">
-            <Button href="/" className={getLinkClassName("/")} onClick={() => setIsMenuOpen(false)}>
+            <Button
+              href="/"
+              className={getLinkClassName("/")}
+              onClick={() => setIsMenuOpen(false)}
+            >
               HOME
             </Button>
-            <Button href="/sobre" className={getLinkClassName("/sobre")} onClick={() => setIsMenuOpen(false)}>
+            <Button
+              href="/sobre"
+              className={getLinkClassName("/sobre")}
+              onClick={() => setIsMenuOpen(false)}
+            >
               SOBRE
             </Button>
-            <Button href="/#projetos" className={getLinkClassName("/#projetos")} onClick={() => setIsMenuOpen(false)}>
+            <Button
+              href="/#projetos"
+              className={getLinkClassName("/#projetos")}
+              onClick={() => setIsMenuOpen(false)}
+            >
               PORTFOLIO
             </Button>
             <div className="border-t border-[#717171] w-full my-2" />
             <Button
-              href="https://drive.google.com/file/d/1be4QEXJGk1EPh66alBymBYTXfZTSpK7n/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Ea4U5eRJlB008oU7Mp106BlidvF8Io6e/view"
               target="_blank"
               className="text-primary flex gap-2 items-center justify-center w-full p-2 rounded-md"
             >

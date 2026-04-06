@@ -59,7 +59,7 @@ export function Footer() {
         <div className="border-t md:border-t-0 md:border-l border-secondary pt-8 md:pt-0 md:pl-14 flex flex-col justify-center space-y-2 ">
           <Button
             className="text-primary text-2xl md:text-3xl font-bold flex flex-row items-center gap-2 p-2"
-            href="https://drive.google.com/file/d/1be4QEXJGk1EPh66alBymBYTXfZTSpK7n/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Ea4U5eRJlB008oU7Mp106BlidvF8Io6e/view"
             target="_blank"
           >
             <DownloadSimple weight="bold" size={32} />
